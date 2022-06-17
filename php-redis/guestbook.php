@@ -6,7 +6,7 @@ ini_set('display_errors', 1);
 require 'Predis/Autoloader.php';
 
 Predis\Autoloader::register();
-
+echo "Hello, lets display our PHP"
 if (isset($_GET['cmd']) === true) {
   $host = 'redis-master';
   if (getenv('GET_HOSTS_FROM') == 'env') {
