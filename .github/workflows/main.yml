@@ -34,8 +34,6 @@ jobs:
     # Add steps here like linting, testing, minification, etc.
       
     - name: Setup ECR
-      run: |
-        # Login to AWS ECR
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
     - name: Build, tag and push the image
